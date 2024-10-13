@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My Dictionary{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h1>Hello It's My name</h1>
+    <h2>Translation  {{ dictionary.sourceLanguage.lang }} => {{ dictionary.translationLanguage.lang }}</h2>
+    <table>
+        <tr>
+            <td>Word</td><td>Translation</td>
+        </tr>
+        <tr>
+            <td>{{ dictionary.word }}</td> <td>{{ dictionary.translation }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
